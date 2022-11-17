@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS de Bootstrap-->
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <!--FUENTES de google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <!--Animated.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--CSS Propio-->
     <link rel="stylesheet" href="css/styles.css">
     <title>Mercado Herrajes</title>
 </head>
@@ -16,7 +22,7 @@
 
         <header class="encabezado">
             <img class="logo" src="img/logo.jpeg.webp" alt="logo">
-            <div>
+            <div class="animate__animated animate__fadeInRight">
                 <h1>Mercado Herrajes</h1>
                 <h4>La tienda online</h4>
             </div>
@@ -24,51 +30,60 @@
 
         <nav class="menu">
             <ul>
-                <li><a href=""></a>Inicio</li>
-                <li><a href=""></a>Productos</li>
-                <li><a href=""></a>Como comprar</li>
-                <li><a href=""></a>Historia</li>
-                <li><a href=""></a>Contacto</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/faq.html">Como comprar</a></li>
+                <li><a href="pages/historia.html">Historia</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
         <div class="banner">
-            <img src="" alt="banner">
+            <img src="img/Banner.jpeg" class="animate__animated animate__fadeIn" alt="banner">
         </div>
 
         <main class="contenido">
-            <section>
-                <div class="compra-online">
-                    <h3>Ahora podes hacer tu compra 100% online</h2>
-                    <p>Pedí desde tu casa y recibí el mismo día</p>
-                    <h3>Te ayudamos con tu emprendimiento</h3>
-                    <p>Consulta con nuestros asesores técnicos para guiarte en tu emprendimiento</p>
-                </div>
-            </section>
+            <div>
+                <h3>Ahora podes hacer tu compra 100% online</h2>
+                <p>Pedí desde tu casa y recibí el mismo día</p>
+            </div>
+            <div>
+                <h3>Te ayudamos con tu emprendimiento</h3>
+                <p>Consulta con nuestros asesores técnicos para guiarte en tu emprendimiento</p>
+            </div>
         </main>
 
         <section class="img-contenido">
-            <img src="" alt="img-1">
+            <img src="img/marca.jpeg" alt="img-1">
         </section>
 
         <section class="cards">
-            <div class="card-1">
-                <img src="" alt="Producto 1">
-                <h4>Corredera tipo granero</h4>
-                <p>Esta corredera es ideal para puertas de cocinas o divisorias de livings</p>
-                <a class="boton-comprar" href="">Comprar</a>
+            <div class="card">
+                <img src="img/Producto 1.webp" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Corredera tipo granero</h5>
+                    <p class="card-text">Esta corredera es ideal para puertas de cocinas o divisorias de livings</p>
+                    <p class="card-text"><small class="text-muted">EN STOCK</small></p>
+                    <a href="" class="btn btn-primary">Ver más</a>
+                </div>
             </div>
-            <div class="card-1">
-                <img src="" alt="Producto 2">
-                <h4>Corredera telescópica para cajones</h4>
-                <p>Esta corredera es ideal para cajones de bajo mesadas</p>
-                <a class="boton-comprar" href="">Comprar</a>
+            <div class="card">
+                <img src="img/Producto 2.jpeg" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Corredera telescópica para cajones</h5>
+                    <p class="card-text">Esta corredera es ideal para cajones de bajo mesadas</p>
+                    <p class="card-text"><small class="text-muted">EN STOCK</small></p>
+                    <a href="" class="btn btn-primary">Ver más</a>
+                </div>
             </div>
-            <div class="card-1">
-                <img src="" alt="Producto 3">
-                <h4>Kit de placard</h4>
-                <p>Con este kit podrás armar las puertas corredizas de tu placard</p>
-                <a class="boton-comprar" href="">Comprar</a>
+            <div class="card">
+                <img src="img/Producto 3.jpeg" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Kit de placard</h5>
+                    <p class="card-text">Con este kit podrás armar las puertas corredizas de tu placard</p>
+                    <p class="card-text"><small class="text-muted">EN STOCK</small></p>
+                    <a href="" class="btn btn-primary">Ver más</a>
+                </div>
             </div>
         </section>
 
@@ -80,6 +95,6 @@
 
 
     </div>
-    
+        <script src="bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

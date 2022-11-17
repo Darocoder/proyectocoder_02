@@ -2,15 +2,16 @@
     padding: 0;
     margin: 0;
 }
-
+body {
+    font-family: 'Montserrat', sans-serif;    
+}
 .grid-container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     color: black;
-    font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 220px 100px 150px 200px 300px 100px;
+    grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: 
     "header header header"
     "nav nav nav"
@@ -34,8 +35,30 @@
 }
 
 .menu { 
-    background-color: aquamarine;
+    background-color: lightgrey;
     grid-area: nav;
+    padding: 12px 0;
+}
+
+.menu ul li a:hover {
+    color: blue;
+    transition: all 600ms linear;
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
 }
 
 /* .menu ul li {
@@ -43,32 +66,190 @@
 } */
 
 .banner {
-    background-color: darkolivegreen;
     grid-area: banner;
 }
 
+.banner img {
+    width: 100%;
+}
 /* .compra-online {}*/
 
 .img-contenido {
-    background-color: coral;
     grid-area: img;
 }
 
+.img-contenido img {
+    width: 100%;
+}
+
 .contenido {
-    background-color: grey;
+    background-color: lightblue;
     grid-area: main;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
 }
+
+.contenido div:last-child p {
+    margin: 0;
+}
+
 .cards {
-    background-color: beige;
+    background-color: #eee;
     grid-area: section;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
 }
 
+.cards .card {
+    width: 30%;
+    margin: 0 12px;
+    max-width: 340px;
+    margin-bottom: 20px;
+    transition: all 250ms ease-in-out;
+}
+.cards .card:hover {
+    transform: scale(1.1);
+}
+
+.cards .card img {
+    height: 200px;
+    object-fit: cover;
+}
 .pie {
-    background-color: chartreuse;
+    background-color: lightgray;
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .social {
     width: 30px;
+    margin: 0 5px;
 }
+
+.faq {
+    padding: 40px 0;
+    background-color: #eee;
+}
+
+.historia .img-banner {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.historia .txt {
+    margin: 60px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contacto {
+    padding-top: 60px;
+}
+
+.mapa {
+    width: 100%;
+    height: 320px;
+    margin-top: 60px;
+}
+
+/*Tablets*/
+@media (max-width: 767px) {
+    .logo {
+        width: 110px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    .encabezado {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .encabezado div {
+        text-align: center;
+    }
+    
+    .menu ul li a {
+        font-size: 13px;
+    }
+    
+    h3 {
+        font-size: 17px;
+    }
+    body {
+        font-size: 13px;
+    }
+    .cards .card {
+        width: 40%;
+        flex: none;
+        margin-bottom: 20px;
+    }
+    .cards {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+/*Mobile*/
+@media (max-width: 575px) {
+    .encabezado {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .encabezado div {
+        text-align: center;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-container {
+        width: 100%;
+        margin: 0 auto;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "banner banner banner"
+        "img img img"
+        "main main main"
+        "section section section"
+        "footer footer footer"
+        ;
+    }
+    .img-contenido img {
+        height: 200px;
+        object-fit: contain;
+    }
+
+    body {
+        font-size: 13px;
+    }
+    .cards .card {
+        width: 100%;
+        flex: none;
+    }
+    .cards {
+        padding: 20px;
+    }
+}
+
