@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.menu { 
+    background-color: lightgrey;
+    grid-area: nav;
+    padding: 12px 0;
+    ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        li {
+            list-style: none;
+            margin: 0 12px;
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+            a:hover {
+                color: blue;
+                transition: all 600ms linear;
+            } 
+        }
+    }
+}
