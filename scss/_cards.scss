@@ -1,0 +1,22 @@
+.cards {
+    background-color: $bg-cards;
+    grid-area: section;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+    .card {
+        width: 30%;
+        margin: 0 12px;
+        max-width: 340px;
+        margin-bottom: 20px;
+        transition: all 250ms ease-in-out;
+        img {
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    .card:hover {
+        transform: scale(1.1);
+    }
+}

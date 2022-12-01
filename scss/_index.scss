@@ -1,0 +1,25 @@
+.banner {
+    grid-area: banner;
+    img {
+        width: 100%;
+    }
+}
+ 
+/* .compra-online {}*/
+
+.img-contenido {
+    grid-area: img;
+    img {
+        width: 100%;
+    }
+}
+
+.contenido {
+    background-color: lightblue;
+    grid-area: main;
+    @include flex-colum-center;
+    padding: 24px;
+    div:last-child p {
+        margin: 0;
+    }
+}

@@ -4,7 +4,7 @@
 }
 
 .menu { 
-    background-color: lightgrey;
+    background-color: $bg-menu;
     grid-area: nav;
     padding: 12px 0;
     ul {
@@ -25,4 +25,48 @@
             } 
         }
     }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;    
+}
+.grid-container {
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "banner banner banner"
+    "img main main"
+    "section section section"
+    "footer footer footer"
+    ;
+}
+
+.logo {
+    width: 220px;
+}
+.encabezado {
+    background-color: rgba(245, 245, 245, 0.702);
+    grid-area: header;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.pie {
+    background-color: $bg-menu;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social {
+    @extend .social-icon;
 }
